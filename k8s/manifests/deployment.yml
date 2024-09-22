@@ -5,7 +5,7 @@ metadata:
   labels:
     app: netflix-app
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: netflix-app
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: netflix-app
-        image: aniketk1827/netflix:latest
+        image: aniketk1827/netflix:v1
         ports:
         - containerPort: 3000
